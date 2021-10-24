@@ -21,8 +21,21 @@ int fibonic(int value)
     return sum;
 }
 
+int sum(int input)
+{
+    if (input == 0)
+    {
+        return 0;
+    }
+    sum(input - 1);
+    if (input % 2 != 0)
+    {
+        cout << input << " ";
+    }
+}
+
 int main()
 {
     // cout << fac(5);
-    cout << fibonic(7);
+    sum(10);
 }
