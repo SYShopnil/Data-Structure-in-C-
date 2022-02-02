@@ -10,6 +10,15 @@ int fac(int value)
     return value * fac(value - 1);
 }
 
+int facTwo(int value)
+{
+    if (value == 0)
+    {
+        return 1;
+    }
+    return value * fac(value - 1);
+}
+
 int fibonic(int value)
 {
     if (value == 1 || value == 2)
@@ -37,5 +46,7 @@ int sum(int input)
 int main()
 {
     // cout << fac(5);
-    sum(10);
+    // sum(10);
+    // cout << facTwo(5);
+    
 }
